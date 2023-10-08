@@ -26,7 +26,6 @@ public class KafkaConsumerConfig {
         return new DefaultKafkaConsumerFactory<>(config);
     }
 
-    // kafka listener 를 만드는 kafka listener container factory 생성
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String, Long> kafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<String, Long> factory = new ConcurrentKafkaListenerContainerFactory<>();
