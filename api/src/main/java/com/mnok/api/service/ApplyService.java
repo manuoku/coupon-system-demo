@@ -1,7 +1,7 @@
 package com.mnok.api.service;
 
-import com.mnok.api.domain.Coupon;
 import com.mnok.api.producer.CouponCreateProducer;
+import com.mnok.api.repository.AppliedUserRepository;
 import com.mnok.api.repository.CouponCountRepository;
 import com.mnok.api.repository.CouponRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +14,7 @@ public class ApplyService {
     private final CouponRepository couponRepository;
     private final CouponCountRepository couponCountRepository;
     private final CouponCreateProducer couponCreateProducer;
+    private final AppliedUserRepository appliedUserRepository;
 
     // 쿠폰발급 로직
     public void apply(Long userId) {
@@ -27,11 +28,15 @@ public class ApplyService {
 
         //long count = couponRepository.count();
         // 쿠폰 발급 전 쿠폰 개수를 증가시키고 발급된 쿠폰의 개수가 100개 보다 많다면 발급하지 않도록 변경하였음.
+
+        Long apply = appliedUserRepository.add(userId);
+
+        if (apply != 1) return;
+
+
         Long count = couponCountRepository.increment();
 
-        if(count > 100) {
-            return;
-        }
+        if(count > 100) return;
 
         //couponRepository.save(new Coupon(userId));
         couponCreateProducer.create(userId);

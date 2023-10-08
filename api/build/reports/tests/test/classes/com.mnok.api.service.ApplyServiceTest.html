@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">11.116s</div>
+<div class="counter">11.019s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,9 +79,9 @@
 </tr>
 </thead>
 <tr>
-<td class="success">동시에_여러개_응모</td>
-<td class="success">여러명응모()</td>
-<td class="success">11.116s</td>
+<td class="success">한명당_한개의쿠폰만_발급</td>
+<td class="success">한명당_한개의쿠폰만_발급()</td>
+<td class="success">11.019s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,8 +89,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:27:31.082 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mnok.api.service.ApplyServiceTest]: ApplyServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:27:31.135 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mnok.api.ApiApplication for test class com.mnok.api.service.ApplyServiceTest
+<pre>16:51:34.890 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mnok.api.service.ApplyServiceTest]: ApplyServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:51:34.942 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mnok.api.ApiApplication for test class com.mnok.api.service.ApplyServiceTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -100,31 +100,31 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.4)
 
-2023-10-08T16:27:31.348+09:00  INFO 37652 --- [    Test worker] com.mnok.api.service.ApplyServiceTest    : Starting ApplyServiceTest using Java 17.0.7 with PID 37652 (started by jonghwa in /Users/jonghwa/Workspace/inflearn1/coupon-system/api)
-2023-10-08T16:27:31.349+09:00  INFO 37652 --- [    Test worker] com.mnok.api.service.ApplyServiceTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-10-08T16:27:31.672+09:00  INFO 37652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-10-08T16:27:31.673+09:00  INFO 37652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-08T16:27:31.749+09:00  INFO 37652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
-2023-10-08T16:27:31.760+09:00  INFO 37652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-10-08T16:27:31.761+09:00  INFO 37652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-10-08T16:27:31.768+09:00  INFO 37652 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mnok.api.repository.CouponRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2023-10-08T16:27:31.769+09:00  INFO 37652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
-2023-10-08T16:27:32.020+09:00  INFO 37652 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-08T16:27:32.047+09:00  INFO 37652 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-08T16:27:32.048+09:00  INFO 37652 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-08T16:27:32.116+09:00  INFO 37652 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-08T16:27:32.183+09:00  INFO 37652 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-08T16:27:32.191+09:00  INFO 37652 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-08T16:27:32.393+09:00  INFO 37652 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19f497aa
-2023-10-08T16:27:32.394+09:00  INFO 37652 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-08T16:27:32.519+09:00  INFO 37652 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-08T16:27:32.820+09:00  INFO 37652 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-08T16:51:35.148+09:00  INFO 38965 --- [    Test worker] com.mnok.api.service.ApplyServiceTest    : Starting ApplyServiceTest using Java 17.0.7 with PID 38965 (started by jonghwa in /Users/jonghwa/Workspace/inflearn1/coupon-system/api)
+2023-10-08T16:51:35.149+09:00  INFO 38965 --- [    Test worker] com.mnok.api.service.ApplyServiceTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-10-08T16:51:35.475+09:00  INFO 38965 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-08T16:51:35.476+09:00  INFO 38965 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-08T16:51:35.553+09:00  INFO 38965 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2023-10-08T16:51:35.565+09:00  INFO 38965 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-10-08T16:51:35.566+09:00  INFO 38965 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-10-08T16:51:35.574+09:00  INFO 38965 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.mnok.api.repository.CouponRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-10-08T16:51:35.574+09:00  INFO 38965 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2023-10-08T16:51:35.820+09:00  INFO 38965 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-08T16:51:35.844+09:00  INFO 38965 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-08T16:51:35.845+09:00  INFO 38965 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-08T16:51:35.914+09:00  INFO 38965 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-08T16:51:35.978+09:00  INFO 38965 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-08T16:51:35.987+09:00  INFO 38965 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-08T16:51:36.196+09:00  INFO 38965 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2efcc0b3
+2023-10-08T16:51:36.197+09:00  INFO 38965 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-08T16:51:36.322+09:00  INFO 38965 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-08T16:51:36.625+09:00  INFO 38965 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: drop table if exists coupon
 Hibernate: create table coupon (id bigint not null auto_increment, user_id bigint, primary key (id)) engine=InnoDB
-2023-10-08T16:27:32.869+09:00  INFO 37652 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-08T16:27:33.217+09:00  WARN 37652 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-08T16:27:33.460+09:00  INFO 37652 --- [    Test worker] com.mnok.api.service.ApplyServiceTest    : Started ApplyServiceTest in 2.259 seconds (process running for 2.796)
-2023-10-08T16:27:33.988+09:00  INFO 37652 --- [ool-3-thread-32] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2023-10-08T16:51:36.673+09:00  INFO 38965 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-08T16:51:37.036+09:00  WARN 38965 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-08T16:51:37.273+09:00  INFO 38965 --- [    Test worker] com.mnok.api.service.ApplyServiceTest    : Started ApplyServiceTest in 2.265 seconds (process running for 2.798)
+2023-10-08T16:51:37.808+09:00  INFO 38965 --- [ool-3-thread-22] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -214,13 +214,13 @@ Hibernate: create table coupon (id bigint not null auto_increment, user_id bigin
 	transactional.id = null
 	value.serializer = class org.apache.kafka.common.serialization.LongSerializer
 
-2023-10-08T16:27:34.025+09:00  INFO 37652 --- [ool-3-thread-32] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2023-10-08T16:27:34.054+09:00  INFO 37652 --- [ool-3-thread-32] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
-2023-10-08T16:27:34.054+09:00  INFO 37652 --- [ool-3-thread-32] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
-2023-10-08T16:27:34.054+09:00  INFO 37652 --- [ool-3-thread-32] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1696750054053
-2023-10-08T16:27:34.215+09:00  INFO 37652 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition coupon_create-0 to 0 since the associated topicId changed from null to 7nCnmCZxTSu6lGtF_mYgEw
-2023-10-08T16:27:34.216+09:00  INFO 37652 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: CtHpUMxXR5Gqs105Sr8Rpg
-2023-10-08T16:27:34.217+09:00  INFO 37652 --- [ad | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 8 with epoch 0
+2023-10-08T16:51:37.868+09:00  INFO 38965 --- [ool-3-thread-22] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2023-10-08T16:51:37.888+09:00  INFO 38965 --- [ool-3-thread-22] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.4.1
+2023-10-08T16:51:37.888+09:00  INFO 38965 --- [ool-3-thread-22] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8a516edc2755df89
+2023-10-08T16:51:37.888+09:00  INFO 38965 --- [ool-3-thread-22] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1696751497887
+2023-10-08T16:51:38.047+09:00  INFO 38965 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition coupon_create-0 to 0 since the associated topicId changed from null to 7nCnmCZxTSu6lGtF_mYgEw
+2023-10-08T16:51:38.048+09:00  INFO 38965 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: CtHpUMxXR5Gqs105Sr8Rpg
+2023-10-08T16:51:38.049+09:00  INFO 38965 --- [ad | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 10 with epoch 0
 Hibernate: select count(*) from coupon c1_0
 </pre>
 </span>
@@ -233,7 +233,7 @@ Hibernate: select count(*) from coupon c1_0
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2.1</a> at 2023. 10. 8. 오후 4:27:44</p>
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 2023. 10. 8. 오후 4:51:48</p>
 </div>
 </div>
 </body>
